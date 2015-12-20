@@ -69,9 +69,9 @@ router.route('/')
                       //HTML response will set the location and redirect back to the home page. You could also create a 'success' page if that's your thing
                     html: function(){
                         // If it worked, set the header so the address bar doesn't still say /adduser
-                        res.location("blobs");
+                        //res.location("blobs");
                         // And forward to success page
-                        res.redirect("/blobs");
+                        res.redirect("/");
                     },
                     //JSON response will show the newly created blob
                     json: function(){
@@ -224,7 +224,7 @@ router.route('/:id/edit')
                         res.format({
                             //HTML returns us back to the main page, or you can create a success page
                               html: function(){
-                                   res.redirect("/blobs");
+                                   res.redirect("/");
                              },
                              //JSON returns the item with the message that is has been deleted
                             json: function(){

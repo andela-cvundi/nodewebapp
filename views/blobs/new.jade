@@ -3,7 +3,7 @@ extends ../layout
 block content
     h1.
         #{title}
-    form#formAddBlob(name="addblob",method="post",action="/blobs")
+    form#formAddBlob(name="addblob",method="post",action="/")
         p Name:
             input#inputName(type="text", placeholder="ex. John Smith", name="name")
         p Badge:
